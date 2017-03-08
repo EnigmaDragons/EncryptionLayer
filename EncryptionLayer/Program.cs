@@ -20,7 +20,7 @@ namespace EncryptionLayer
         [STAThread]
         static void Main()
         {
-            using (var game = new MainGame("Logo", new ScreenSettings(1600, 900, false), CreateSceneFactory(), CreateKeyboardController()))
+            using (var game = new MainGame("Logo", new ScreenSettings(1200, 800, false), CreateSceneFactory(), CreateKeyboardController()))
                 game.Run();
         }
 
@@ -37,6 +37,7 @@ namespace EncryptionLayer
             return new SceneFactory(new Dictionary<string, Func<IScene>>
             {
                 { "Logo", () => new FadingInScene(new LogoScene()) },
+                { "MainMenu", () => new FadingInScene(new MainMenuScene()) },
             });
         }
     }
