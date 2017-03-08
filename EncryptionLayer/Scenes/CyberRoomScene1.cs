@@ -16,6 +16,7 @@ namespace EncryptionLayer.Scenes
         public void Init()
         {
             Input.ClearBindings();
+            World.PlayMusic("Music/bgm");
             _map.Add(new TileWalker(0, 20, 0, 20).Get(x => new Tile("ground2", x, false)));
             _map.Add(new TileWalker(0, 9, 0, 1).Get(x => new Tile("wall-h1", x, true, 1)));
             _map.Add(new TileWalker(11, 9, 0, 1).Get(x => new Tile("wall-h1", x, true, 1)));

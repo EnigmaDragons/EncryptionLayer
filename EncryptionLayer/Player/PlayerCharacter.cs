@@ -16,6 +16,10 @@ namespace EncryptionLayer.Player
         private readonly ICharSpace _charSpace;
         private Transform _transform;
 
+        // Collision
+        private BoxCollider Collider => 
+            new BoxCollider(new Rectangle(_transform.Location.ToPoint(), new Vector2(16 * _transform.Scale, 16 * _transform.Scale).ToPoint()));
+
         // Animations
         private readonly Animations _anims;
         private Direction _dir = new Direction();
@@ -49,7 +53,7 @@ namespace EncryptionLayer.Player
             _anims.Update(delta);
             var distance = new Physics().GetDistance(moveSpeed, delta);
             if (distance > 0)
-                _transform = _charSpace.ApplyMove(_transform, new Movement(distance, _dir).GetDelta());
+                _transform = _charSpace.ApplyMove(_transform, Collider, new Movement(distance, _dir).GetDelta());
         }
 
         public void Draw(Transform parentTransform)

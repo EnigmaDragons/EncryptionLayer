@@ -82,6 +82,7 @@
     <Compile Include="Inputs\ControlState.cs" />
     <Compile Include="Inputs\VerticalDirection.cs" />
     <Compile Include="Memory\Resources.cs" />
+    <Compile Include="PhysicsEngine\BoxCollider.cs" />
     <Compile Include="PhysicsEngine\Physics.cs" />
     <Compile Include="PhysicsEngine\PhysicsInstance.cs" />
     <Compile Include="PhysicsEngine\RandomDirection.cs" />

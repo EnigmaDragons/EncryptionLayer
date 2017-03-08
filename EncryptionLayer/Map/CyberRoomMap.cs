@@ -43,8 +43,11 @@ namespace EncryptionLayer.Map
             _tiles.OrderBy(x => x.Layer).ForEach(x => x.Draw(parentTransform));
         }
 
-        public Transform ApplyMove(Transform transform, Vector2 moveBy)
+        public Transform ApplyMove(Transform transform, BoxCollider collider, Vector2 moveBy)
         {
+            var proposedLocation = new Rectangle(collider.Rectangle.Location + moveBy.ToPoint(), collider.Rectangle.Size);
+            if (_tiles.Where(x => x.IsBlocking).Any(x => proposedLocation.Intersects(x.Collider.Rectangle)))
+                return transform;
             return transform + moveBy;
         }
     }
