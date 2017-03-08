@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using MonoDragons.Core.Common;
 using MonoDragons.Core.Engine;
+using MonoDragons.Core.PhysicsEngine;
 
 namespace MonoDragons.Core.Render
 {
@@ -21,7 +22,7 @@ namespace MonoDragons.Core.Render
 
         public void Draw(IVisual visual)
         {
-            visual.Draw(_position);
+            visual.Draw(new Transform(_position));
         }
 
         public void Draw(IEnumerable<IVisual> visuals)

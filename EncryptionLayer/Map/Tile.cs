@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using MonoDragons.Core.Engine;
+using MonoDragons.Core.PhysicsEngine;
 
 namespace EncryptionLayer.Map
 {
@@ -23,7 +24,7 @@ namespace EncryptionLayer.Map
         {
         }
 
-        public virtual void Draw(Vector2 offset)
+        public virtual void Draw(Transform parentTransform)
         {
             World.Draw(TextureName, new Rectangle(Location.RenderPosition.ToPoint(), new Point(TileSize.RenderSize, TileSize.RenderSize)));
         }

@@ -71,9 +71,5 @@ namespace MonoDragons.Core.Engine
             scene.Init();
             _currentScene = scene;
         }
-
-        public void NavigateTo(string sceneName, SceneTransition transition)
-        {
-        }
     }
 }

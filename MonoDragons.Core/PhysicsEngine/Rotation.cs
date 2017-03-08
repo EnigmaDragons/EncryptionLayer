@@ -1,9 +1,11 @@
 ﻿using System;
 
-namespace EncryptionLayer.Map
+namespace MonoDragons.Core.PhysicsEngine
 {
     public struct Rotation
     {
+        public static Rotation None = new Rotation(0);
+        public static Rotation Default = new Rotation(0);
         public static Rotation Up = new Rotation(0);
         public static Rotation Right = new Rotation((float)(Math.PI / 2));
         public static Rotation Down = new Rotation((float)Math.PI);
