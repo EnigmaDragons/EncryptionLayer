@@ -11,7 +11,7 @@ namespace EncryptionLayer.Scenes
         public void Init()
         {
             Input.ClearBindings();
-            Input.On(Control.Start, () => World.NavigateToScene("Game"));
+            Input.On(Control.Start, () => World.NavigateToScene("CyberRoom1"));
         }
 
         public void Update(TimeSpan delta)
@@ -20,7 +20,6 @@ namespace EncryptionLayer.Scenes
 
         public void Draw()
         {
-            UI.DrawBackgroundColor(Color.Black);
             UI.DrawCentered("Images/MainMenu/background", new Vector2(1200, 800));
             World.DrawRectangle(new Rectangle(0, 0, 1200, 960), Color.FromNonPremultiplied(0, 0, 0, 225));
             UI.DrawCenteredWithOffset("Images/MainMenu/title", new Vector2(0, -140));

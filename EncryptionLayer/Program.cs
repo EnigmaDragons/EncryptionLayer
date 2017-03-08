@@ -9,14 +9,8 @@ using MonoDragons.Core.Navigation;
 namespace EncryptionLayer
 {
 #if WINDOWS || LINUX
-    /// <summary>
-    /// The main class.
-    /// </summary>
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -38,6 +32,7 @@ namespace EncryptionLayer
             {
                 { "Logo", () => new FadingInScene(new LogoScene()) },
                 { "MainMenu", () => new FadingInScene(new MainMenuScene()) },
+                { "CyberRoom1", () => new CyberRoomScene1() },
             });
         }
     }

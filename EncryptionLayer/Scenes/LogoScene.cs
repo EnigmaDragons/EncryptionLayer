@@ -39,7 +39,6 @@ namespace EncryptionLayer.Scenes
 
         public void Draw()
         {
-            UI.DrawBackgroundColor(Color.Black);
             UI.DrawCentered("Images/Logo/enigmadragons");
         }
     }
