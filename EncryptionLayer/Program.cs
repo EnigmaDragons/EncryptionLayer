@@ -14,7 +14,7 @@ namespace EncryptionLayer
         [STAThread]
         static void Main()
         {
-            using (var game = new MainGame("Logo", new ScreenSettings(1200, 800, false), CreateSceneFactory(), CreateKeyboardController()))
+            using (var game = new MainGame("CyberRoom1", new ScreenSettings(1200, 800, false), CreateSceneFactory(), CreateKeyboardController()))
                 game.Run();
         }
 
@@ -22,7 +22,7 @@ namespace EncryptionLayer
         {
             return new KeyboardController(new Map<Keys, Control>
             {
-                { Keys.Enter, Control.Start }
+                { Keys.Enter, Control.Start },
             });
         }
 

@@ -13,7 +13,7 @@ namespace EncryptionLayer.Map
 
         public Tile(string textureName, TileLocation loc, bool blocking, int layer = 0)
         {
-            TextureName = textureName;
+            TextureName = "Images/Map/" + textureName;
             Location = loc;
             IsBlocking = blocking;
             Layer = layer;
