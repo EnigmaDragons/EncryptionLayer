@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionLayer", "EncryptionLayer.csproj", "{203E8B6D-F892-4EE3-A721-B80991F12746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDragons.Core", "..\MonoDragons.Core\MonoDragons.Core.csproj", "{A33F8FE3-A35A-4DDF-B96C-0157224F602C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F58202BA-3E76-481C-828E-12D2FED2E5A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{203E8B6D-F892-4EE3-A721-B80991F12746}.Debug|x86.ActiveCfg = Debug|x86
+		{203E8B6D-F892-4EE3-A721-B80991F12746}.Debug|x86.Build.0 = Debug|x86
+		{203E8B6D-F892-4EE3-A721-B80991F12746}.Release|x86.ActiveCfg = Release|x86
+		{203E8B6D-F892-4EE3-A721-B80991F12746}.Release|x86.Build.0 = Release|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Debug|x86.ActiveCfg = Debug|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Debug|x86.Build.0 = Debug|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Release|x86.ActiveCfg = Release|x86
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A33F8FE3-A35A-4DDF-B96C-0157224F602C} = {F58202BA-3E76-481C-828E-12D2FED2E5A6}
+	EndGlobalSection
+EndGlobal
